@@ -1,0 +1,17 @@
+<ActionBar title="Lista de Tarefas" class="action-bar"> </ActionBar>
+
+<StackLayout>
+
+    <StackLayout class="form" style="border-bottom-color: blue; border-bottom-width: 7px;">
+        <TextField class="input input-border" hint="nova tarefa" #newTask (returnPress)="createTask(newTask)"></TextField>
+    </StackLayout>
+
+    <ListView class="list-group" row="1" [item]="tasks" (itemTap)="deleteTask($event)"> 
+        <ng-template let-task="item">
+            <StackLayout class="list-group-item">
+                <label [text]="task" class="list-group-item-text"> </label>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+    
+</StackLayout>
