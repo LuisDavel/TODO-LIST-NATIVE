@@ -1,4 +1,4 @@
-# TristeNoNative
+
 Atividade faculdade utilizando NativeScript
 
 Para utilizar o aplicativo é simples,  basta apenas dar o tns preview, rodar no android ou IOS
